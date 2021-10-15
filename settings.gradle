@@ -1,0 +1,4 @@
+rootProject.name = "Game Library Test"
+
+include(':Library')
+include(':Mod')
