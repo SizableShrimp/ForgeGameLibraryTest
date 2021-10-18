@@ -42,7 +42,7 @@ minecraft {
     runs {
         client {
             taskName 'library_client'
-            ideaModule "${rootProject.name}.${project.name}.main"
+            ideaModule "${rootProject.name}.${project.name}.main".replace(' ', '_')
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
@@ -66,7 +66,7 @@ minecraft {
 
         server {
             taskName 'library_server'
-            ideaModule "${rootProject.name}.${project.name}.main"
+            ideaModule "${rootProject.name}.${project.name}.main".replace(' ', '_')
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
@@ -90,7 +90,7 @@ minecraft {
 
         data {
             taskName 'library_data'
-            ideaModule "${rootProject.name}.${project.name}.main"
+            ideaModule "${rootProject.name}.${project.name}.main".replace(' ', '_')
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
